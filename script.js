@@ -2,7 +2,7 @@ const fizzBuzz = (number1, number2) => {
     
     const result = number1 + number2;
     if (number1 + number2 === 0){
-        alert (`Result must not 0`)
+        alert (`Input must not 0`)
         return;
     }
     if (result % 3 === 0 && result % 5 === 0) {
