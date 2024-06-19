@@ -1,13 +1,17 @@
 const fizzBuzz = (number1, number2) => {
     
     const result = number1 + number2;
+    if (number1 + number2 === 0){
+        alert (`Result must not 0`)
+        return;
+    }
     if (result % 3 === 0 && result % 5 === 0) {
         return `FizzBuzz ${number1} + ${number2} = ${result}`;
     }
-    else if (result % 3 === 0) {
+    if (result % 3 === 0) {
         return `Fizz ${number1} + ${number2} = ${result}`;
     }
-    else if (result % 5 === 0) {
+    if (result % 5 === 0) {
         return `Buzz ${number1} + ${number2} = ${result}`;
     }
     else {
